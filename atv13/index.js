@@ -9,8 +9,10 @@ console.log(`Jogador 1: ${player1}`);
 player2 = Math.floor(Math.random() * 6) + 1;
 console.log(`Jogador 2: ${player2}`);
 
-if (player1 > player1) {
+if (player1 > player2) {
   console.log("Jogador 1 venceu!");
-} else {
+} else if(player2 > player1){
   console.log("Jogador 2 venceu!");
+} else {
+  console.log("Empatou!")
 }
