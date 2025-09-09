@@ -34,7 +34,7 @@ do {
     console.log("Opsção inválida!");
   }
 
-  loopOption = prompt("Deseja continuar?[s/n]: ").trim();
+  loopOption = prompt("Deseja continuar?[s/n]: ").trim().toLowerCase();
   if (loopOption === "s") {
     notExit = true;
   } else {
