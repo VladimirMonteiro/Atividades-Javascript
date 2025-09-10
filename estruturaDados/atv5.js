@@ -11,7 +11,7 @@ for (let i = 0; i < 5; i++) {
 }
 console.log("\n");
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 20; i++) {
   let number = parseInt(
     prompt(`Informe o valor na posição ${i + 1} do segundo array: : `)
   );
@@ -19,7 +19,7 @@ for (let i = 0; i < 5; i++) {
 }
 const generateArray = (arr1, arr2, operation) => {
   let resultArray = [];
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 20; i++) {
     if (operation === "-") resultArray.push(arr1[i] - arr2[i]);
     else if (operation === "+") resultArray.push(arr1[i] + arr2[i]);
     else resultArray.push(arr1[i] * arr2[i]);
