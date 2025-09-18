@@ -29,9 +29,23 @@ Este é um projeto do clássico jogo **Batalha Naval**, desenvolvido com o objet
 ## 🖥️ Como Rodar o Projeto
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/VladimirMonteiro/Atividades-Javascript.git
+   
+3. Navegue até a pasta do jogo
+
+   ```bash
+   cd Atividades-Javascript
    cd estruturaDados
    cd batalha-naval-CONSOLE
+   
+5. Instale as dependências
+
+     ```bash
    npm install
+     
+7. Rode o jogo
+
+   ```bash
    node batalha-naval.js
