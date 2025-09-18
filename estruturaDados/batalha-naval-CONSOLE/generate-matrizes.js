@@ -27,7 +27,7 @@ export const generatePlayerMatriz = (size) => {
   }
   return playerMatriz;
 };
-
+// Função que compara as matrizes do jogador com a matriz de navio.
 export const compareMatrizes = (
   player,
   matrizShip,

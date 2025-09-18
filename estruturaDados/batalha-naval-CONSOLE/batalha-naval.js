@@ -6,6 +6,7 @@ const prompt = promptSync();
 let playGame = true;
 let player1, player2;
 
+// Menu do jogo
 while (playGame) {
   showListDifficulty();
   let difficulty = parseInt(prompt("Dificuldade desejada: "));

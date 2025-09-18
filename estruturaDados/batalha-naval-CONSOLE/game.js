@@ -19,6 +19,7 @@ export const game = (
   let matrizPlayer2 = generatePlayerMatriz(size);
   let machineQuantityShip = quantityShip;
 
+  // While onde a partida ocorre
   while (attempts > 0) {
     console.log("*********************************************");
     console.log(`Quantidade de tiros: ${attempts}`);
@@ -33,6 +34,7 @@ export const game = (
       console.log("Máquina: ");
       console.table(matrizPlayer2);
 
+      // Jogada do jogador
       let selected = prompt("Informe a posição que deseja atirar (ex: 02): ");
 
       // Validação robusta de input (deve ser dois dígitos numéricos)
@@ -48,6 +50,7 @@ export const game = (
         selected
       );
 
+      // verifica o resultado do jogador
       if (result === "") {
         console.log("\x1b[31mVocê já atirou nesta posição!\x1b[0m");
       } else if (result === true) {
@@ -95,11 +98,6 @@ export const game = (
 function playMachinePLayer(matrizShip, machineMatriz, size, plays) {
   let x, y, play;
 
-  // Evita loop infinito
-  if (plays.size >= size * size) {
-    console.log("Máquina já tentou todas as posições possíveis!");
-    return false;
-  }
 
   do {
     x = Math.floor(Math.random() * size);
