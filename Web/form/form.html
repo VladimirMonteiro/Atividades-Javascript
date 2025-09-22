@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <script src="submit_form.js"></script>
+    <title>Cadastro de usuários</title>
+  </head>
+  <body>
+    <section class="mainContainer">
+      <div class="leftContainer">
+        <h1>Faça seu cadastro para ficar por dentro das novidades!</h1>
+        <div>
+          <img src="/Web/form/my-digi.gif" alt="" />
+        </div>
+      </div>
+      <div class="rightContainer">
+        <form method="post" id="form">
+            <div id="errorContainer">
+                <p id="errorMsg"></p>
+            </div>
+          <h2>Cadastro</h2>
+          <div class="inputContainer">
+            <label for="name">Nome completo: </label>
+            <input
+              class="input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Informe seu nome completo..."
+              required
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="emai">E-mail: </label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Informe seu e-mail..."
+              required
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="password">Senha: </label>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="8"
+            />
+          </div>
+
+          <div class="inputContainer">
+            <label for="confirmPassword">confirme sua senha: </label>
+            <input
+              class="input"
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              required
+              minlength="8"
+            />
+          </div>
+          <div
+            class="inputContainer"
+            style="flex-direction: row; justify-content: space-around"
+          >
+            <label
+              ><input
+                class="radioInput"
+                type="radio"
+                name="gender"
+                value="masculino"
+              />Masculino</label
+            >
+            <label
+              ><input
+                class="radioInput"
+                type="radio"
+                name="gender"
+                value="feminino"
+              />Feminino</label
+            >
+            <label
+              ><input
+                class="radioInput"
+                type="radio"
+                name="gender"
+                value="outro"
+              />Outro</label
+            >
+          </div>
+          <div class="inputContainer">
+            <p>Quais são seus interesses?</p>
+            <label
+              ><input
+                class="checkboxInput"
+                type="checkbox"
+                name="interests"
+                value="esportes"
+              />Esportes</label
+            >
+            <label
+              ><input
+                class="checkboxInput"
+                type="checkbox"
+                name="interests"
+                value="musica"
+              />Música</label
+            >
+            <label
+              ><input
+                class="checkboxInput"
+                type="checkbox"
+                name="interests"
+                value="tecnologia"
+              />Tecnologia</label
+            >
+          </div>
+          <div class="inputContainer">
+            <p>Enviar foto de perfil</p>
+            <input type="file" name="profile" id="profile" accept="image/*" />
+          </div>
+          <div class="inputContainer">
+            <label for="country">País de origem: </label>
+            <select class="selectContainer" name="country" id="country">
+              <option value="">Selecione</option>
+              <option value="brasil">Brasil</option>
+              <option value="EUA">Estados Unidos</option>
+              <option value="portugal">Portugal</option>
+              <option value="inglaterra">Inglaterra</option>
+            </select>
+          </div>
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
